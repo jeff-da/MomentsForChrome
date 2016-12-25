@@ -1,0 +1,11 @@
+{
+    "name": "Moments New Tab by Jeffrey Da",
+    "description": "A new tab page with pictures of the Pacific Northwest, all taken by Jeffrey Da.",
+    "version": "0.0.0.1",
+    "permissions" : ["management"],
+	"manifest_version": 2,
+	"content_security_policy": "script-src 'self' 'http://numbersapi.com/2012/year?write&fragment' 'unsafe-eval'; object-src 'self'",
+    "chrome_url_overrides" : {
+        "newtab": "newtab.html"
+    }
+}
