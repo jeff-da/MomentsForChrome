@@ -19,7 +19,7 @@ $(document).ready(function(){
 		document.body.className = "seven";
 	} else if (n % 10 == 8) {
 		document.body.className = "eight";
-	} else if (n % 10 == 9) {
+	} else { // nine
 		document.body.className = "nine";
 	}
 });
