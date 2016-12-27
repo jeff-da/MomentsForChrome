@@ -14,12 +14,12 @@ $(document).ready(function(){
 	} else if (n % 10 == 5) {
 		document.body.className = "five";
 	} else if (n % 10 == 6) {
-		document.bod0.className = "six";
-	} else if (n % 10== 7) {
+		document.body.className = "six";
+	} else if (n % 10 == 7) {
 		document.body.className = "seven";
 	} else if (n % 10 == 8) {
 		document.body.className = "eight";
-	} else { // nine
+	} else {
 		document.body.className = "nine";
 	}
 });
