@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!-- 
-MOMENTS 0.0.0.3
+MOMENTS 0.0.0.5
 Thanks for checking out my extension!
 Random fact for the day is generated via a direct cross-origion JQuery request via NumbersAPI,
 API created by talented David Hu and Mack Duan.
 CSS generated with the help of W3.CSS.
+Share buttons used with permission, CSS by Captain Anonymous.
 - Jeff
 -->
 <html>
@@ -15,6 +16,8 @@ CSS generated with the help of W3.CSS.
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
 
 <style type="text/css">
 body,h1 {font-family: "Raleway", sans-serif}
@@ -90,6 +93,8 @@ body, html {height: 100%}
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script src="js/facebook.js"></script>
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
   </div>
@@ -102,7 +107,27 @@ body, html {height: 100%}
   <div class="w3-display-bottomleft w3-padding-large">
     Photos by <a href="https://www.instagram.com/barton.da.photography/" target="_blank">Jeffrey Da</a>
   </div>
-</div>
+  <ul class="social">
+  <div class="w3-display-bottomright w3-padding-large" id="social-test">
+  <li class="fb-share-button" data-href="https://chrome.google.com/webstore/detail/moments-a-pnw-new-tab-by/gkilhahehgdokeggegnhndaikbbfjgjc" data-layout="button" 
+  data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" 
+  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fmoments-a-pnw-new-tab-by%2Fgkilhahehgdokeggegnhndaikbbfjgjc&amp;src=sdkpreparse">
+  <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	
+	<li><a class="twitter-share-button"
+  href="https://twitter.com/share"
+  data-size="large"
+  data-text="Check out this sweet chrome extension!"
+  data-url="https://chrome.google.com/webstore/detail/moments-a-pnw-new-tab-by/gkilhahehgdokeggegnhndaikbbfjgjc"
+  data-hashtags="chrome,photography"
+  data-via="twitterdev"
+  data-related="twitterapi,twitter"
+  aria-hidden="true"
+  target="_blank">
+<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="https://www.instagram.com/barton.da.photography/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+  </div>
 </body>
   <script src="js/jquery.js"></script>
 	<script src="js/datefact.js"></script>
