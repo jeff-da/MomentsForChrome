@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<!-- 
-MOMENTS 0.0.0.5
+l<!DOCTYPE html>
+<!--
+MOMENTS 0.0.0.6
 Thanks for checking out my extension!
 Random fact for the day is generated via a direct cross-origion JQuery request via NumbersAPI,
 API created by talented David Hu and Mack Duan.
@@ -27,75 +27,117 @@ body, html {height: 100%}
     background-position: center;
     background-size: cover;
 }
-.one { 
-    background: url('http://i.imgur.com/zXOr9DP.jpg'); 
+.one {
+    background: url('./assets/1.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.two { 
-    background: url('http://i.imgur.com/GROqHwv.jpg'); 
+.two {
+    background: url('./assets/2.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.three { 
-    background: url('http://i.imgur.com/YQkHNPw.jpg'); 
+.three {
+    background: url('./assets/3.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.four { 
-    background: url('http://i.imgur.com/3NtKbqs.jpg'); 
+.four {
+    background: url('./assets/4.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.five { 
-    background: url('http://i.imgur.com/3NtKbqs.jpg'); 
+.five {
+    background: url('./assets/5.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.six { 
-    background: url('http://i.imgur.com/1g70O6D.jpg'); 
+.six {
+    background: url('./assets/6.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.seven { 
-    background: url('http://i.imgur.com/3qr5n1x.jpg'); 
+.seven {
+    background: url('./assets/7.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.eight { 
-    background: url('http://i.imgur.com/SjlJi0H.jpg'); 
+.eight {
+    background: url('./assets/8.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.nine { 
-    background: url('http://i.imgur.com/JRrjlhV.jpg'); 
+.nine {
+    background: url('./assets/9.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.ten { 
-    background: url('http://i.imgur.com/iFN5hWn.jpg'); 
+.ten {
+    background: url('./assets/10.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
     }
-.eleven { 
-    background: url('http://i.imgur.com/3E1VtkS.jpg'); 
+.eleven {
+    background: url('./assets/11.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
 
     }
-.twelve { 
-    background: url('http://i.imgur.com/gf5AltA.jpg'); 
+.twelve {
+    background: url('./assets/12.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+.thirteen {
+    background: url('./assets/13.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+	}
+.fourteen {
+    background: url('./assets/14.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+	}
+.fifteen {
+    background: url('./assets/15.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+	}
+.sixteen {
+    background: url('./assets/16.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+	}
+.seventeen {
+    background: url('./assets/17.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+	}
+.eighteen {
+    background: url('./assets/18.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+	}
+.nineteen {
+    background: url('./assets/19.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -107,44 +149,64 @@ body, html {height: 100%}
 <body>
 <div id="fb-root"></div>
 <script src="js/facebook.js"></script>
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top w3-center">
-	<script src="js/goodmorning.js">
-	</script>
-	</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%"> 
-    
-	<p class="w3-large w3-center"><span id="number"></span></p> 
+<div class="bgimg w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle" style="width:80%;">
+    <h2 class="w3-xxxlarge w3-serif w3-animate-top w3-center">
+  <div id="root"></div>
+	</h2>
+  <hr class="w3-border-grey" style="margin:auto;width:40%">
+	<p class="w3-large w3-center"><span id="number"></span></p>
 	</div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Photos by <a href="https://www.instagram.com/barton.da.photography/" target="_blank">Jeffrey Da</a>
-  </div>
-  <ul class="social">
-  <div class="w3-display-bottomright w3-padding-large" id="social-test">
-  <li class="fb-share-button" data-href="https://chrome.google.com/webstore/detail/moments-a-pnw-new-tab-by/gkilhahehgdokeggegnhndaikbbfjgjc" data-layout="button" 
-  data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" 
-  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fmoments-a-pnw-new-tab-by%2Fgkilhahehgdokeggegnhndaikbbfjgjc&amp;src=sdkpreparse">
-  <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-	
-	<li><a class="twitter-share-button"
-  href="https://twitter.com/share"
-  data-size="large"
-  data-text="Check out this sweet chrome extension!"
-  data-url="https://chrome.google.com/webstore/detail/moments-a-pnw-new-tab-by/gkilhahehgdokeggegnhndaikbbfjgjc"
-  data-hashtags="chrome,photography"
-  data-via="twitterdev"
-  data-related="twitterapi,twitter"
-  aria-hidden="true"
-  target="_blank">
-<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-<li><a href="https://www.instagram.com/barton.da.photography/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-	  </div>
 	</ul>
 </body>
   <script src="js/jquery.js"></script>
 	<script src="js/datefact.js"></script>
 	    <script src="js/index.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+      <script type="text/babel">
+      class Greeting extends React.Component {
+        render() {
+          var currentHour = new Date().getHours();
+          if (currentHour < 12 && currentHour > 3) {
+            var greetings = Array(
+              'Good morning, Sunshine!',
+              'Rise n’ shine!',
+              'Top of the morning to ya!',
+              'Hope you have an awesome day.',
+              'Good morning.',
+              'Have a great day today.',
+              "You're here! The day just got better.",
+              "You look nice today."
+            );
+            return (<div>{greetings[Math.floor(Math.random()*greetings.length)]}</div>);
+          } else if (currentHour < 18) {
+            var greetings = Array(
+              "You're doing great today.",
+              "Hope you're having a great day.",
+              'Hope your day is going well.',
+              'Good afternoon.',
+              'Have a great day today.',
+              "You're here! The day just got better.",
+              "You look nice today."
+            );
+            return (<div>{greetings[Math.floor(Math.random()*greetings.length)]}</div>);
+          } else {
+            var greetings = Array(
+              "Hope you had a great day.",
+              "Hope your day went well.",
+              'Remember to get lots of sleep, if you can.',
+              "You look nice today.",
+              "Good evening."
+            );
+            return (<div>{greetings[Math.floor(Math.random()*greetings.length)]}</div>);
+          }
+        }
+      }
+      ReactDOM.render(
+          <Greeting />,
+          document.getElementById('root')
+      );
+      </script>
 </html>
