@@ -2,7 +2,7 @@
     "name": "Moments: A PNW New Tab by Jeffrey Da",
 	"short_name": "Moments",
     "description": "A beautified new tab page featuring pictures of the Pacific Northwest and a random intresting fact about the current day.",
-    "version": "0.0.1.1",
+    "version": "0.0.1.2",
     "permissions" : ["management"],
 	"manifest_version": 2,
 	"content_security_policy": "script-src 'self' 'http://numbersapi.com/2012/year?write&fragment' 'unsafe-eval'; object-src 'self'",
